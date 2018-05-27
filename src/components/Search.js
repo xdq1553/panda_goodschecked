@@ -11,12 +11,23 @@ export class Search extends React.Component{
     showman(){
         let man = document.getElementsByClassName("man")[0];
         let woman  = document.getElementsByClassName("woman")[0];
-        man.style.display = "none"; 
+        man.style.backgroundColor = "#9fd7fe"; 
+        man.style.borderBottom = "2px solid  #549fed";
+        man.style.color= "#fff9de"
+        woman.style.backgroundColor = "#fff9de";
+        woman.style.borderBottom = "2px solid  #fff9de";
+        woman.style.color= "#b0a593"
+
     }
     showwoman(){
         let man = document.getElementsByClassName("man")[0];
         let woman  = document.getElementsByClassName("woman")[0];
-        man.style.display = "block"; 
+        man.style.backgroundColor = "#fff9de"; 
+        man.style.borderBottom = "2px solid  #fff9de";
+        woman.style.backgroundColor = "#ffb9c9";
+        woman.style.borderBottom = "2px solid  #ff88a4";
+        woman.style.color= "#fff9de";
+        man.style.color= "#b0a593";
     }
 
     render(){

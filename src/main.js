@@ -6,6 +6,7 @@ require("./css/base.css")
 require("./less/style.less")
 require("./less/category.less")
 require("./less/collect.less")
+require("./less/mycenter.less")
 
 let w = document.documentElement.clientWidth;
 //计算rem

@@ -6,6 +6,7 @@ import {Woman} from "./pages/category/Woman"
 import { Beauty } from "./pages/category/Beauty"
 import { Sortcontroller } from "./pages/sort/Sort"
 import { Collect } from "./pages/Collect"
+import { Mycenter } from "./pages/Mycenter"
 
 
 export class App extends React.Component{
@@ -23,6 +24,7 @@ export class App extends React.Component{
                         <Route path="/beauty" component={Beauty}/>
                         <Route path="/sort" component={Sortcontroller}/>
                         <Route path="/collect" component={Collect}/>
+                        <Route path="/person" component={Mycenter }/>
                         <Redirect from="/" to="/home" exact={ true } />
                     </Switch>
                 </Router>
