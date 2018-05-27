@@ -13,21 +13,35 @@ class Home extends React.Component {
     }
 
     render(){
+        //json数组比较  
+        // let newgoods = this.props.goodsList
+        // function s(newgoods){
+        //     function compare(a,b){  
+        //         return a.charts - b.charts;  
+        //     } 
+        //     newgoods.sort(compare);
+        //     console.log(newgoods);
+        // }
+        // s(newgoods);
+        // console.log(this.props.goodsList);
+
         let goodsList = this.props.goodsList.map((goods,i)=>{
-            return (
-                <li key={i}>
-                    <Link to="/detail">
-                        <div className="liImg"><img src={goods.goodsImg} /></div>
-                        <p>{goods.goodsName}</p>
-                        <p>¥<span>{goods.goodsPrice}</span>   已售：<span>{goods.goodsBuy}</span></p>
-                    </Link>
-                </li>
-            )
+            if(goods.charts < 6 ){
+                return (
+                    <li key={i}>
+                        <Link to="/detail">
+                            <div className="liImg"><img src={goods.goodsImg} /></div>
+                            <p>{goods.goodsName}</p>
+                            <p>¥<span>{goods.goodsPrice}</span>   已售：<span>{goods.goodsBuy}</span></p>
+                        </Link>
+                    </li>
+                )
+            }
         })
 
         return (
             <div>
-                <Search />
+                <Search location={ this.props.location } />
                 {/* 导航栏 */}
                 <HomeCategory />
                 {/* 轮播图 */}
@@ -92,6 +106,15 @@ class Home extends React.Component {
                             <div className="daily">
                                 <ul>
                                     {goodsList}
+                                    <li>
+                                        <Link to="/seeall">
+                                            <div className="liImg">
+                                                <p className="more">更多商品</p>
+                                                <p className="seemore">See more</p>
+                                            </div>
+                                        </Link>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -114,5 +137,6 @@ class Home extends React.Component {
 let mapStateToProps = ({goods}) => ({goodsList:goods.goodsList});
 let mapDispatchToProps = dispatch => ({
     // 给Action传递方法
+
 })
 export const HomeController = connect(mapStateToProps, mapDispatchToProps)(Home)

@@ -4,6 +4,8 @@ import { App } from "./app"
 // 引入样式文件
 require("./css/base.css")
 require("./less/style.less")
+require("./less/category.less")
+require("./less/collect.less")
 
 let w = document.documentElement.clientWidth;
 //计算rem

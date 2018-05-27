@@ -15,7 +15,7 @@ export class Woman extends React.Component {
     render(){
         return (
             <div>
-                <Search />
+                <Search location={ this.props.location }  />
                 <HomeCategory />
                 <h1>1111</h1>
                 <HomeSort />

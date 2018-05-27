@@ -4,7 +4,8 @@ import store from "./store"
 import {HomeController as Home} from "./pages/home/Home"
 import {Woman} from "./pages/category/Woman"
 import { Beauty } from "./pages/category/Beauty"
-import { Recommend } from "./pages/category/Recommend"
+import { Sortcontroller } from "./pages/sort/Sort"
+import { Collect } from "./pages/Collect"
 
 
 export class App extends React.Component{
@@ -20,7 +21,8 @@ export class App extends React.Component{
                         <Route path="/home" component={Home}/>
                         <Route path="/woman" component={Woman}/>
                         <Route path="/beauty" component={Beauty}/>
-                        <Route path="/recommend" component={ Recommend }/>
+                        <Route path="/sort" component={Sortcontroller}/>
+                        <Route path="/collect" component={Collect}/>
                         <Redirect from="/" to="/home" exact={ true } />
                     </Switch>
                 </Router>

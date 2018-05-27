@@ -9,8 +9,10 @@
     background: #fde25c;
     padding: 0.3rem 0.36rem;
     display: flex;
+    top:0;
     .change_box{
         height: @sh_1;
+        width: 1.46rem;
         margin-right:0.36rem; 
         float: left;
         border-radius: 0.42rem 0.42rem;
@@ -28,11 +30,13 @@
         }
         .man{
             border-radius: 50%;
+            float: left;
             background: #9fd7fe;
             border-bottom: 2px solid  #549fed;
             color:#fff;
         }
         .woman{
+            float: right;
             border-radius: 50%;
             background:#ffb9c9;
             border-bottom: 2px solid  #ff88a4;
@@ -41,7 +45,7 @@
        
     }
     .input_box{
-        width: 8.1rem;
+        width: 8.3rem;
         height: @sh_1;
         border-radius: 0.2rem;
         background: #f5f5f5;
@@ -66,81 +70,138 @@
 @nh:1.24rem;
 @ch:0.60rem;
 .nav{
-    position: fixed;
-    z-index: 1000;
-    height: @nh;
-    background: #fde25c;
-    top: 1.40rem;
-    .recommend{
-        width: 2.19rem;
-        height: @ch;
-        margin-top:0.3rem;
-        padding:0 0.23rem; 
-        
-        text-align: center;
-        float: left;
-        border-right:0.01rem solid #694a1c;
-        a{
-            height: 0.93rem;
-            display: block;
-            
-        }
-       
-    }
-    .navmove{
-        width: 7rem;
+        position: fixed;
+        z-index: 1000;
         height: @nh;
-        float: left;
-        white-space: nowrap;
-        overflow-y: hidden;
-        overflow-x:scroll;
-        
-        ul{
-            width: 24rem;
-            height: @nh;
-            display: inline-block;
-           li{
-               width: 1.48rem;
-               height: @nh;
-               float: left;
-               margin: 0 0.15rem;
-               .category{
-                width: 1.39rem;
+        background: #fde25c;
+        top: 1.40rem;
+        .nav_1{
+            // display: none;
+            .recommend{
+                width: 2.19rem;
+                height: @ch;
+                margin-top:0.3rem;
+                padding:0 0.23rem; 
+                text-align: center;
+                float: left;
+                border-right:0.01rem solid #694a1c;
+                a{
+                    height: 0.93rem;
+                    display: block;
+                    
+                }
+            
+            }
+            .navmove{
+                width: 7.14rem;
                 height: @nh;
-                display: block;
+                float: left;
+                white-space: nowrap;
+                overflow-y: hidden;
+                overflow-x:scroll;
+                ul{
+                    width: 27rem;
+                    height: @nh;
+                    display: inline-block;
+                li{
+                    width: 1.48rem;
+                    height: @nh;
+                    float: left;
+                    margin: 0 0.15rem;
+                    .category{
+                        width: 1.39rem;
+                        height: @nh;
+                        display: block;
+                        text-align: center;
+                        line-height: @nh;
+                        
+                    }
+                
+                }
+                }
+            }
+            .active{
+            border-bottom: 0.09rem solid #43240c;
+            box-sizing: border-box;
+            }
+            .category_check{
+                width: 1rem;
+                height: @nh;
+                float: left;
+                line-height: @nh;
+                .iconfont{
+                    color:#43240c;
+                    font-size: 0.46rem;
+                }
+            }
+        }
+    
+    // 点击下拉菜单
+    .downMenu{
+        display: none;
+        height: 20rem;
+        background: rgba(0, 0, 0, 0.3);
+        .top_1{
+            background: #fde25c;
+            width: 100%;
+            .top{
+                width: @nh;
+                padding-right:0.5rem;
+                width: 10.3rem;
                 text-align: center;
                 line-height: @nh;
-                
-               }
-           
-           }
+                overflow: hidden;
+                span{
+                   
+                   float: right;
+                }
+            }
         }
-    }
-    .active{
-     border-bottom: 0.09rem solid #43240c;
-     box-sizing: border-box;
-    }
-    .category_check{
-        width: 1.14rem;
-        height: @nh;
-        float: left;
-        line-height: @nh;
-        .iconfont{
-            color:#43240c;
-            font-size: 0.46rem;
+        .allsort{
+            // height: 1rem;
+            width: 10.3rem;
+            
+            ul{
+                width: 10.3rem;
+                padding-right:0.5rem;
+                display: flex;
+                flex-wrap: wrap;
+                background: #fff;
+                justify-content:center;
+                li{
+                    
+                    width: 2.4rem;
+                    height: 2.5rem;
+                    .img{
+                        height: 1.12rem;
+                        padding-top: 0.62rem;
+                        line-height: 1.12rem;
+                        text-align: center;
+                        vertical-align: middle;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                    p{
+                        line-height: 0.72rem;
+                        text-align: center;
+                        font-size: 0.32rem;
+                    }
+                }
+            }
         }
+        
     }
     
 }
 
-// 的导航底部栏
+// 底部栏
 @fh:1.6rem;
 @fh_1:1.4rem;
 footer{
     position: fixed;
     background: #484850;
     bottom: 0;
-    left: 0;
     width: 100%;
 
     ul{
@@ -175,7 +236,6 @@ footer{
 // 轮播图
 .bgBox{
    padding-top: 2.65rem;
-
 .banner{
     @h:4rem;
     width: 100%;
@@ -349,10 +409,23 @@ footer{
                         .liImg{
                             width: 3rem;
                             height: 3rem;
+                            line-height: 3rem;
                             padding-bottom:0.08rem;
                             border: 0.01rem solid #ececec; 
                             img{
                                 height: 100%;
+                            }
+                            .more{
+                                margin: 0 0.6rem;
+                                padding-top:  0.85rem;
+                                color:#ffc600;
+                                line-height:0.65rem;
+                                font-size: 0.36rem;
+                                border-bottom: 0.02rem solid #d9d9d9;
+                            }
+                            .seemore{
+                                line-height: .66rem;
+                                font-size: 0.22rem;
                             }
                         }
                         p{
@@ -500,7 +573,6 @@ footer{
                     .allPic{
                         height: 4.88rem;
                         margin:0 .4rem;
-                        background: #f22; 
                     }
                     .allGoods{
                         line-height: 0.7rem;

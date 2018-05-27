@@ -1,0 +1,206 @@
+@lh:3.3rem;
+.collect{
+    height: 1.46rem;
+    width: 9.52rem;
+    background: #fde25c;
+    line-height: 1.46rem;
+    text-align: center;
+    overflow: hidden;
+    padding:0 0.64rem; 
+    position:fixed;
+    top:0;
+    span{
+        float: right;
+    }
+}
+.collectImg{
+   padding-top: 1.46rem;
+   background: #f5f5f5;
+   .oneCollect{
+        margin-top: 0.24rem;
+        background: #fff;
+        display: flex;
+        height: @lh;
+       .left{
+            width: 3.26rem;
+            height: @lh;
+            margin-right: 0.35rem;
+            line-height: @lh;
+            text-align: center;
+            vertical-align: middle;
+       } 
+       .right{
+           width: 6.9rem;
+           height: @lh;
+           margin-right:0.3rem;
+           padding-top: 0.2rem;
+            .name{
+                line-height: 0.40rem;
+                font-size: 0.34rem;
+                .iconfont{
+                    font-size: 0.34rem;
+                    padding-right:.16rem; 
+                }
+            }
+            .date{
+                margin-top: 0.24rem;
+                line-height: 0.4rem;
+            }
+            .price{
+                height: 1rem;
+                margin-top: 0.64rem;
+                display: flex;
+                justify-content: space-between;
+                overflow: hidden;
+                .money{
+                    height: 0.44rem;
+                    line-height: 0.44rem;
+                    margin: 0.28rem 0;
+                    span:nth-of-type(1){
+                        font-size: 0.5rem;
+                        color: #fa585a;
+                    }
+                }
+                .chit{
+                    height: 0.44rem;
+                    line-height: 0.44rem;
+                    margin: 0.28rem 0;
+                    padding: 0 0.22rem ;
+                    background: #fa585a;
+                    border-radius: 0.1rem;
+                    font-size: 0.4rem;
+                    color: #fff;
+                }
+            }
+       }
+   }
+    // 更多优惠更新中
+    .more{
+        line-height: 1.34rem;
+        p{
+            line-height: 1.34rem;
+            text-align: center;
+            font-size: 0.34rem;
+            color: #b1a9a5;
+           .iconfont{
+               color: #fee44e;
+           }
+           .left{
+            margin-right:0.4rem;
+           }
+           .right{
+            margin-left:0.4rem;
+           }
+        }
+        
+    }
+    // 商品列表页
+    .goods{
+        ul{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            li{
+                width: 5.26rem;
+                height: 8.04rem;
+                margin: 0.05rem;
+                background: #fff;
+                .goodsdetail{
+                    .goodsImg{
+                        text-align: center;
+                        line-height: 5.25rem;
+                        height: 5.25rem;
+                        width: 5.25rem;
+                        vertical-align: middle;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                    .goodsText{
+                        line-height: 0.8rem;
+                        padding:0 0.3rem;
+                        font-size: 0.36rem;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    .cat{
+                        line-height: 0.36rem;
+                        padding:0 .22rem;
+                        overflow: hidden;
+                        .skyCat{
+                            height: 0.36rem;
+                            text-align: center;
+                            line-height: 0.36rem;
+                            width: 0.77rem;
+                            background: #c51e25;
+                            color: #fff;
+                            font-size: .3rem;
+                            border-radius: 0.05rem;
+                            float: left;
+                        }
+                        .pinkage{
+                            height: 0.36rem;
+                            text-align: right;
+                            line-height: 0.36rem;
+                            color: #b1a9a5;
+                            font-size: .3rem;
+                            float: right;
+                        }
+                    }
+
+                   .money{
+                       line-height: 1.30rem;
+                       overflow: hidden;
+                       padding:0 .22rem;
+                       .price{
+                           font-size: 0.28rem;
+                           float: left;
+
+                       }
+                       .chit{
+                        font-size: 0.28rem;
+                        float: right;
+                        width: 1.06rem;
+                        line-height: 0.28rem;
+                        border: 0.02rem solid #fa585a;
+                        border-radius: 0.05rem;
+                        color:#fa6567;
+                        font-size: 0.22rem;
+                        margin-top:0.5rem;
+                       }
+                   } 
+                }
+            }
+
+            .allList{
+                background: #ffdf63;
+                .goodsCategory{
+                    display: block;
+                    margin-top: 0.42rem;
+                    h1{
+                        line-height: 0.46rem;
+                        font-size: 0.46rem;
+                        text-align: center;
+                    }
+                    .lowPrice{
+                        line-height: 0.78rem;
+                        font-size: 0.36rem;
+                        text-align: center;
+                    }
+                    .allPic{
+                        height: 4.88rem;
+                        margin:0 .4rem;
+                    }
+                    .allGoods{
+                        line-height: 0.7rem;
+                        text-align: center;
+                        margin: 0.4rem 1.36rem;
+                        border-radius: 0.34rem;
+                        background: #422408;
+                    }
+                }
+            }
+        }
+    }
+}
