@@ -6,9 +6,501 @@ const INIT_DATA = {
     category : {
         navList : [
             {
+                hash:"woman",
                 name: "女装",
                 path: "/woman",
                 img:"http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"beauty",
+                name: "美妆护肤",
+                path: "/beauty",
+                img:"http://img1.lukou.com/static/img/category/category_3.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"man",
+                name: "男装",
+                path: "/man",
+                img:"http://img1.lukou.com/static/p/fb/tab/5.png",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"acc",
+                name: "配饰",
+                path: "/acc",
+                img:"http://img1.lukou.com/static/img/category/category_4.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"womanshoe",
+                name: "女鞋",
+                path: "/womanshoe",
+                img:"http://img1.lukou.com/static/p/fb/tab/13.jpeg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"womaneat",
+                name: "零食王国",
+                path: "/womaneat",
+                img:"http://img1.lukou.com/static/img/category/category_12.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"bag",
+                name: "箱包",
+                path: "/bag",
+                img:"http://img1.lukou.com/static/img/category/category_7.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"person",
+                name: "个人洗护",
+                path: "/person",
+                img:"http://img1.lukou.com/static/img/category/category_8.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"manshoe",
+                name: "男鞋",
+                path: "/manshoe",
+                img:"http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"phone",
+                name: "手机周边",
+                path: "/phone",
+                img:"http://img1.lukou.com/static/p/fb/tab/6.png",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"homephone",
+                name: "数码家电",
+                path: "/homephone",
+                img:"http://img1.lukou.com/static/img/category/category_10.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"cloth",
+                name: "内衣袜子",
+                path: "/cloth",
+                img:"http://img1.lukou.com/static/img/category/category_11.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"manuse",
+                name: "成人用品",
+                path: "/manuse",
+                img:"http://img1.lukou.com/static/img/category/category_15.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
+            },
+            {
+                hash:"day",
+                name: "日用家居",
+                path: "/day",
+                img:"http://img1.lukou.com/static/img/category/category_13.jpg",
                 sort: [
                     {
                         sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
@@ -34,74 +526,42 @@ const INIT_DATA = {
                 ]
             },
             {
-                name: "美妆护肤",
-                path: "/beauty",
-                img:"http://img1.lukou.com/static/img/category/category_3.jpg",
-            },
-            {
-                name: "男装",
-                path: "/man",
-                img:"http://img1.lukou.com/static/p/fb/tab/5.png",
-            },
-            {
-                name: "配饰",
-                path: "/acc",
-                img:"http://img1.lukou.com/static/img/category/category_4.jpg",
-            },
-            {
-                name: "女鞋",
-                path: "/womanshoe",
-                img:"http://img1.lukou.com/static/p/fb/tab/13.jpeg",
-            },
-            {
-                name: "零食王国",
-                path: "/womaneat",
-                img:"http://img1.lukou.com/static/img/category/category_12.jpg",
-            },
-            {
-                name: "箱包",
-                path: "/bag",
-                img:"http://img1.lukou.com/static/img/category/category_7.jpg",
-            },
-            {
-                name: "个人洗护",
-                path: "/person",
-                img:"http://img1.lukou.com/static/img/category/category_8.jpg",
-            },
-            {
-                name: "男鞋",
-                path: "/manshoe",
-                img:"http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
-            },
-            {
-                name: "手机周边",
-                path: "/phone",
-                img:"http://img1.lukou.com/static/p/fb/tab/6.png",
-            },
-            {
-                name: "数码家电",
-                path: "/homephone",
-                img:"http://img1.lukou.com/static/img/category/category_10.jpg",
-            },
-            {
-                name: "内衣袜子",
-                path: "/cloth",
-                img:"http://img1.lukou.com/static/img/category/category_11.jpg",
-            },
-            {
-                name: "成人用品",
-                path: "/manuse",
-                img:"http://img1.lukou.com/static/img/category/category_15.jpg",
-            },
-            {
-                name: "日用家居",
-                path: "/day",
-                img:"http://img1.lukou.com/static/img/category/category_13.jpg",
-            },
-            {
+                hash:"chinese",
                 name: "文体娱乐",
                 path: "/chinese",
                 img:"http://img1.lukou.com/static/img/category/category_14.jpg",
+                sort: [
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/5.png",
+                        sortName: "羽绒服"
+                    },
+                    
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/commodity/img/20171229-225348.png",
+                        sortName: "男鞋"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
+                        sortName: "包包"
+                    },
+                    
+                ]
             },
         ]
     },

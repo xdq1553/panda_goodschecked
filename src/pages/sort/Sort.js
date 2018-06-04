@@ -15,34 +15,36 @@ class Sort extends React.Component {
 
     render(){
         // 加载数据
-        console.log(this.props.navList)
+        // console.log(this.props.navList)
         let navList = this.props.navList.map((category,i)=>{
-            // let sortlist = category.sort.map((item,j)=>{
-            //     console.log(item.sortImg)
-            //     return (
-            //         <li key={j}>
-            //             <a name=""> 
-            //                 <div className="pic"><img src={item.sortImg}/></div>
-            //                 <p>{item.sortName}</p>
-            //             </a>
-            //         </li>
-            //     )
-            // })
+
+            console.log(category.sort)
+            let sortlist = category.sort.map((item,j)=>{
+                return (
+                    <li key={j}>
+                        <a name=""> 
+                            <div className="pic"><img src={item.sortImg}/></div>
+                            <p>{item.sortName}</p>
+                        </a>
+                    </li>
+                )
+            })
 
             return (
-                <div className="right" key={i}>
-                    <p className="sortName"><span className="iconfont icon-fengexianzuo"></span>{category.name}<span className="iconfont icon-fengexianyou"></span></p>
-                    <div className="sortbottom">
-                        <ul>
-                            {/* {sortlist} */}
-                            <li>
-                                <a name="man"> 
-                                    <div className="pic"><img src=""/></div>
-                                    <p>111</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div className="right" key={i} id={category.hash}>
+                    {/* <a name={category.hash}> */}
+                        <p className="sortName"><span className="iconfont icon-fengexianzuo"></span>{category.name}<span className="iconfont icon-fengexianyou"></span></p>
+                        <div className="sortbottom">
+                            <ul>
+                                {sortlist}
+                                {/* <li>
+                                    <a name="man"> 
+                                        <div className="pic"><img src=""/></div>
+                                    </a>
+                                </li> */}
+                            </ul>
+                        </div>
+                    {/* </a> */}
                 </div>
             )
         })

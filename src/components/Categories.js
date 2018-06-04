@@ -8,9 +8,10 @@ class Categories extends React.Component{
     }
     render(){
         let navList = this.props.navList.map(( categroy,i)=>{
+           
             return(
                 <li key={i}>
-                    <a href="#man">
+                    <a href={"#"+categroy.hash}>
                         <p>{categroy.name}</p>
                     </a>
                 </li>
