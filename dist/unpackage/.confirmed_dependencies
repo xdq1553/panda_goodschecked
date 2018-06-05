@@ -1,0 +1,8 @@
+{
+	"index.html": {
+		"resources": [
+			"/app.css",
+			"/app.js"
+		]
+	}
+}

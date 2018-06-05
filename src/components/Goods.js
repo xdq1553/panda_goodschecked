@@ -45,57 +45,7 @@ class Goods extends React.Component{
         return (
             <div className="goods">
                 <ul >
-                    {/* <li>
-                        <Link to="/goodsdetail" className="goodsdetail">
-                        <div className="goodsImg"><img src="" /></div>
-                        <p className="goodsText">宾志兰氨基酸洗面奶男士女士护肤</p>
-                        <div className="cat">
-                            <p className="skyCat">天猫</p>
-                            <p className="pinkage">包邮</p>
-                        </div>
-                        <div className="money">
-                            <p className="price">¥<span>7.9</span><span>222</span>人已买</p>
-                            <p className="chit">15元券</p>
-                        </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/goodsdetail" className="goodsdetail">
-                        <div className="goodsImg"><img src="" /></div>
-                        <p className="goodsText">宾志兰氨基酸洗面奶男士女士护肤</p>
-                        <div className="cat">
-                            <p className="skyCat">天猫</p>
-                            <p className="pinkage">包邮</p>
-                        </div>
-                        <div className="money">
-                            <p className="price">¥<span>7.9</span><span>222</span>人已买</p>
-                            <p className="chit">15元券</p>
-                        </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/goodsdetail" className="goodsdetail">
-                        <div className="goodsImg"><img src="" /></div>
-                        <p className="goodsText">宾志兰氨基酸洗面奶男士女士护肤</p>
-                        <div className="cat">
-                            <p className="skyCat">天猫</p>
-                            <p className="pinkage">包邮</p>
-                        </div>
-                        <div className="money">
-                            <p className="price">¥<span>7.9</span><span>222</span>人已买</p>
-                            <p className="chit">15元券</p>
-                        </div>
-                        </Link>
-                    </li> */}
                     {goodsList}
-                    {/* <li className="allList">
-                        <Link to="/goodscategory" className="goodsCategory">
-                            <h1>尚热门同款</h1>
-                            <p className="lowPrice"><span className="iconfont icon-dian1"></span>超低价买同款<span className="iconfont icon-dian1"></span></p>
-                            <div className="allPic"></div>
-                            <p className="allGoods">全部商品</p>
-                        </Link>
-                    </li> */}
                 </ul>
 
             </div>

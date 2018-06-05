@@ -73,3 +73,95 @@
         }
     }
 }
+
+// 切换蓝
+@sh:0.76rem;
+@sh_1:0.84rem;
+.change{
+    height: 1.63rem;
+    background: #f4f4f4;
+    padding-top:2.55rem;
+    .change_bg{
+         height: 1.48rem;
+         border-bottom: 0.01rem solid #d9d9d9;
+         background: #fff;
+         display: flex;
+         justify-content: space-between;
+         padding:0 0.5rem;
+         .left{
+            padding-top: 0.36rem;
+            padding-bottom: 0.32rem;
+            p{
+                font-size: 0.34rem;
+                line-height: 0.38rem;
+                color:#a0a0a0;
+                &:nth-of-type(1){
+                    font-size: 0.38rem;
+                    color: #43240c;
+                    margin-bottom:0.04rem;
+                }
+            }
+         }
+         .right{
+             display: flex;
+            align-items: center;
+            .change_box{
+                height: @sh_1;
+                width: 1.48rem;
+                float: left;
+                border-radius: 0.42rem 0.42rem;
+                overflow: hidden;
+                background: #fff;
+                border: 0.02rem solid #877a73;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div{
+                    height: 0.72rem;
+                    width: 0.69rem;
+                    margin: 0.02rem;
+                    float: left;
+                    line-height: @sh;
+                    font-size: 0.42rem;
+                    text-align: center;
+                    box-sizing: border-box;
+                }
+                .man{
+                    border-radius: 50%;
+                    float: left;
+                    background: #feee9d;
+                    color:#fff;
+                    border:0.02rem solid #52351b;
+                }
+                .woman{
+                    float: right;
+                    border-radius: 50%;
+                    color:#b0a593;
+                }
+
+               
+            }
+         }
+
+    }
+   
+}
+.bottom_text{
+    height: 8.25rem;
+    .recommend,.good,.help,.regard{
+        height: 1.4rem;
+        margin-left:0.47rem;
+        padding-right: 0.47rem;
+        border-bottom:0.01rem solid #d9d9d9;
+        p{
+            line-height: 1.4rem;
+            font-size: 0.36rem;
+            color: #43240c;
+            span{
+                float:right;
+                font-size: 0.36rem;
+                color: #c1bab7;
+            }
+        }
+    }
+}

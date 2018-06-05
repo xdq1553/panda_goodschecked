@@ -7,6 +7,7 @@ export default (state,action)=>{
         category : categoryReducer(state.category,action),
         sort : categoryReducer(state.sort,action),
         goods : categoryReducer(state.goods,action),
+        classGoods : categoryReducer(state.classGoods,action),
     }
     
 }

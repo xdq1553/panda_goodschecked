@@ -40,7 +40,14 @@ const INIT_DATA = {
                         sortImg: "http://img1.lukou.com/static/img/category/category_7.jpg",
                         sortName: "包包"
                     },
-                    
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/1.png",
+                        sortName: "卫衣"
+                    },
+                    {
+                        sortImg: "http://img1.lukou.com/static/p/fb/tab/2.jpeg",
+                        sortName: "卫衣女"
+                    },
                 ]
             },
             {
@@ -677,7 +684,205 @@ const INIT_DATA = {
                 goodsImg:"http://img.alicdn.com/imgextra/i4/1703155368/TB25zhirDlYBeNjSszcXXbwhFXa_!!1703155368-0-item_pic.jpg"
             },
         ]
+    },
+    classGoods: {
+        tabs : [
+            {
+                title: "综合",
+                goods:[
+                    
+                    {
+                        type: "goods",
+                        goodsId: 3,
+                        charts:3,
+                        goodsName: "ZUZU口红保湿防水滋润不易脱色学生哑光官网柔润唇彩精油润唇膏",
+                        goodsPrice: "19.9",
+                        goodsBuy: "1.2万",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20044178.jpeg"
+                    },
+                    {
+                        type: "goods",
+                        goodsId: 4,
+                        charts:4,
+                        goodsName: "韩国丝绒雾面哑光唇釉五件套装染唇液口红持久保湿不脱色唇彩唇蜜",
+                        goodsPrice: "46.9",
+                        goodsBuy: "1.5万",
+                        chit: "20元券",
+                        goodsImg:"http://gaitaobao1.alicdn.com/tfscom/i2/2873055628/TB2AMIaquOSBuNjy0FdXXbDnVXa_!!2873055628.jpg"
+                    },
+                    {
+                        type: "goods",
+                        charts:2,
+                        goodsId: 1,
+                        goodsName: "萃汇尔芦荟胶正品祛痘膏淡化痘印青春痘疤痕女补水保湿男士去痘疤",
+                        goodsPrice: "5.9",
+                        goodsBuy: "2222",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20045156.jpeg" 
+                    },
+                    {
+                        type: "goods",
+                        charts:1,
+                        goodsId: 2,
+                        goodsName: "韩国丝绒雾面唇釉染唇液口红水润持久保湿不脱色不沾杯唇彩唇蜜",
+                        goodsPrice: "59.9",
+                        goodsBuy: "2.4万",
+                        chit: "65元券",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20043371.jpeg"
+                    },
+                    
+                    {
+                        type: "goods",
+                        goodsId: 5,
+                        charts:5,
+                        goodsName: "隐形眼镜盒双联盒美瞳盒子隐形近视眼镜盒伴侣盒收纳护理盒两副装",
+                        goodsPrice: "146.9",
+                        goodsBuy: "1.7万",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20024858.jpeg"
+                    },
+                    {
+                        type: "goods",
+                        charts:2,
+                        goodsId: 1,
+                        goodsName: "萃汇尔芦荟胶正品祛痘膏淡化痘印青春痘疤痕女补水保湿男士去痘疤",
+                        goodsPrice: "5.9",
+                        goodsBuy: "2222",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20045156.jpeg" 
+                    },
+                ]
+            },
+            {
+                title: "价格最低",
+                goods:[
+                   
+                    {
+                        type: "goods",
+                        goodsId: 5,
+                        charts:5,
+                        goodsName: "隐形眼镜盒双联盒美瞳盒子隐形近视眼镜盒伴侣盒收纳护理盒两副装",
+                        goodsPrice: "146.9",
+                        goodsBuy: "1.7万",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20024858.jpeg"
+                    },
+                    {
+                        type: "goods",
+                        charts:2,
+                        goodsId: 1,
+                        goodsName: "萃汇尔芦荟胶正品祛痘膏淡化痘印青春痘疤痕女补水保湿男士去痘疤",
+                        goodsPrice: "5.9",
+                        goodsBuy: "2222",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20045156.jpeg" 
+                    },
+                    {
+                        type: "goods",
+                        charts:1,
+                        goodsId: 2,
+                        goodsName: "韩国丝绒雾面唇釉染唇液口红水润持久保湿不脱色不沾杯唇彩唇蜜",
+                        goodsPrice: "59.9",
+                        goodsBuy: "2.4万",
+                        chit: "65元券",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20043371.jpeg"
+                    },
+                    
+                    {
+                        type: "goods",
+                        goodsId: 3,
+                        charts:3,
+                        goodsName: "ZUZU口红保湿防水滋润不易脱色学生哑光官网柔润唇彩精油润唇膏",
+                        goodsPrice: "19.9",
+                        goodsBuy: "1.2万",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20044178.jpeg"
+                    },
+                    {
+                        type: "goods",
+                        goodsId: 4,
+                        charts:4,
+                        goodsName: "韩国丝绒雾面哑光唇釉五件套装染唇液口红持久保湿不脱色唇彩唇蜜",
+                        goodsPrice: "46.9",
+                        goodsBuy: "1.5万",
+                        chit: "20元券",
+                        goodsImg:"http://gaitaobao1.alicdn.com/tfscom/i2/2873055628/TB2AMIaquOSBuNjy0FdXXbDnVXa_!!2873055628.jpg"
+                    },
+                    {
+                        type: "goods",
+                        charts:2,
+                        goodsId: 1,
+                        goodsName: "萃汇尔芦荟胶正品祛痘膏淡化痘印青春痘疤痕女补水保湿男士去痘疤",
+                        goodsPrice: "5.9",
+                        goodsBuy: "2222",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20045156.jpeg" 
+                    },
+                ]
+            },
+            {
+                title: "销量",
+                goods:[
+                    {
+                        type: "goods",
+                        charts:2,
+                        goodsId: 1,
+                        goodsName: "萃汇尔芦荟胶正品祛痘膏淡化痘印青春痘疤痕女补水保湿男士去痘疤",
+                        goodsPrice: "5.9",
+                        goodsBuy: "2222",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20045156.jpeg" 
+                    },
+                    {
+                        type: "goods",
+                        goodsId: 3,
+                        charts:3,
+                        goodsName: "ZUZU口红保湿防水滋润不易脱色学生哑光官网柔润唇彩精油润唇膏",
+                        goodsPrice: "19.9",
+                        goodsBuy: "1.2万",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20044178.jpeg"
+                    },
+                    {
+                        type: "goods",
+                        charts:2,
+                        goodsId: 1,
+                        goodsName: "萃汇尔芦荟胶正品祛痘膏淡化痘印青春痘疤痕女补水保湿男士去痘疤",
+                        goodsPrice: "5.9",
+                        goodsBuy: "2222",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20045156.jpeg" 
+                    },
+                   
+                    {
+                        type: "goods",
+                        goodsId: 5,
+                        charts:5,
+                        goodsName: "隐形眼镜盒双联盒美瞳盒子隐形近视眼镜盒伴侣盒收纳护理盒两副装",
+                        goodsPrice: "146.9",
+                        goodsBuy: "1.7万",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20024858.jpeg"
+                    },
+                    
+                    {
+                        type: "goods",
+                        goodsId: 4,
+                        charts:4,
+                        goodsName: "韩国丝绒雾面哑光唇釉五件套装染唇液口红持久保湿不脱色唇彩唇蜜",
+                        goodsPrice: "46.9",
+                        goodsBuy: "1.5万",
+                        chit: "20元券",
+                        goodsImg:"http://gaitaobao1.alicdn.com/tfscom/i2/2873055628/TB2AMIaquOSBuNjy0FdXXbDnVXa_!!2873055628.jpg"
+                    },
+                   
+                    {
+                        type: "goods",
+                        charts:1,
+                        goodsId: 2,
+                        goodsName: "韩国丝绒雾面唇釉染唇液口红水润持久保湿不脱色不沾杯唇彩唇蜜",
+                        goodsPrice: "59.9",
+                        goodsBuy: "2.4万",
+                        chit: "65元券",
+                        goodsImg:"http://img1.lukou.com/static/p/commodity/img/20043371.jpeg"
+                    },
+                    
+                    
+                   
+                ]
+            },
+        ]
     }
+
 }
 
 export default createStore(reducer,INIT_DATA,applyMiddleware(thunk))

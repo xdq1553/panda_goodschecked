@@ -31,8 +31,8 @@ export class Search extends React.Component{
     }
 
     render(){
-        console.log(this.props.location);
-        if(this.props.location.pathname == "/home"){
+        // console.log(this.props.location);
+        if(this.props.location.pathname != "/sort"){
             return (
                 <div className="search_box">
                     {/* 男女切换 */}

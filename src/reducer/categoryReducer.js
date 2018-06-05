@@ -1,4 +1,4 @@
-import { CATEGORY_UPDATE,SORT_UPDATE,GOODSLIST_UPDATE } from "../actionTypes";
+import { CATEGORY_UPDATE,SORT_UPDATE,GOODSLIST_UPDATE,CLASSGOODS_UPDATE } from "../actionTypes";
 export default (state,action) => {
    
     switch (action.type) {
@@ -18,6 +18,13 @@ export default (state,action) => {
         case GOODSLIST_UPDATE || GOODSSHOW_UPDATE:
             var newState = {...state}
             newState.goodsList = action.text;
+
+            return newState;
+            break;
+
+        case CLASSGOODS_UPDATE :
+            var newState = {...state}
+            newState.tabs = action.text;
 
             return newState;
             break;
